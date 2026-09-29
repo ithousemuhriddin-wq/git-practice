@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastBite - Mazzali Fastfood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo-dark.png" alt=""></div>
+        <button class="cart-btn" id="cartToggle">Savat (<span id="cartCount">0</span>)</button>
+    </header>
+    <div class="container">
+        <div class="filters" id="filterContainer">
+            <button class="filter-btn active" data-category="all">Barchasi</button>
+            <button class="filter-btn" data-category="burgers">Burgerlar</button>
+            <button class="filter-btn" data-category="hotdogs">Hot-doglar</button>
+            <button class="filter-btn" data-category="drinks">Ichimliklar</button>
+            <button class="filter-btn" data-category="sides">Sneklar</button>
+        </div>
+        <div class="menu-grid" id="menuGrid"></div>
+    </div>
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <h2>Sizning savatingiz</h2>
+            <button id="clearCartBtn" style="background: #ff4d4f; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; float: right; margin-top: -35px; font-weight: bold;">
+                Tozalash 🗑️
+            </button>
+            <div id="cartItems"></div>
+            <button class="checkout-btn" id="checkoutBtn" style="background: #2ea4ff; color: #fff; border: none; padding: 12px; width: 100%; border-radius: 6px; margin-top: 16px; cursor: pointer; font-weight: bold; font-size: 16px;">
+                Buyurtma berish 📤
+            </button>
+            <div class="total-price">Jami: <span id="totalPrice">0</span> so'm</div>
+            <button class="close-btn" id="closeCart">Yopish</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
