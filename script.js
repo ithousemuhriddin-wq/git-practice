@@ -188,7 +188,7 @@ checkoutBtn.addEventListener('click', () => {
   const totalSum = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   message += `\n💰 *Jami:* ${totalSum.toLocaleString()} so'm`;
 
-  const telegramUsername = "  rezzik221"; 
+  const telegramUsername = "rezzik221"; 
 
   const encodedMessage = encodeURIComponent(message);
   const telegramUrl = `https://t.me/${telegramUsername}?text=${encodedMessage}`;
